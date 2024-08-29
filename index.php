@@ -22,8 +22,7 @@
       <p>This is the home page of your website. You can start building your content here.</p>
       
       <?php
-            // Example PHP code
-            echo "<p>Today is " . date("l, F j, Y") . ".</p>";
+            
       ?>
   </div>
 
