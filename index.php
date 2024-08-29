@@ -9,7 +9,7 @@
 </head>
 <body>
    <header>
-      <h1>Welcome to My PHP Website</h1>
+      <h1>hallo en wolcome tot de quizz</h1>
   </header>
 
   <nav>
