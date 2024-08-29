@@ -10,12 +10,10 @@
 <body>
    <header>
       <h1>Welkom tot de quizz</h1>
-      <h3></h3><h3></h3><h3></h3><h3></h3><h3></h3>
   </header>
 
   <nav>
      <a href="index.php">Home</a>
-     
   </nav>
 
   <div class="hoofd">
