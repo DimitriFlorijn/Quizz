@@ -10,6 +10,7 @@
 <body>
    <header>
       <h1>Welkom tot de quizz</h1>
+      <h3></h3><h3></h3><h3></h3><h3></h3><h3></h3>
   </header>
 
   <nav>
