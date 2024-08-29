@@ -13,13 +13,7 @@
         <h1>Welcome to My PHP Website</h1>
     </header>
 
-    <nav>
-        <a href="index.php">Home</a>
-    </nav>
-
     <div class="container">
-        <h2>quizz</h2>
-        <p>This is the home page of your website. You can start building your content here.</p>
         
         <?php
             
