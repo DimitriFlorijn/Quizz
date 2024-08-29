@@ -9,12 +9,12 @@
 </head>
 <body>
    <header>
-      <h1>hallo en wolcome tot de quizz</h1>
+      <h1>hallo en wolkom tot de quizz</h1>
   </header>
 
   <nav>
      <a href="index.php">Home</a>
-     <a href="start.php"></a>
+     <a href="start.php"><img src="img.home.png" alt="klick to start"></a>
   </nav>
 
   <div class="container">
