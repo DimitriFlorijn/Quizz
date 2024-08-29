@@ -18,7 +18,7 @@
   </nav>
 
   <div class="container">
-  <a href="start.php"><img src="img//home.jpeg" alt="img"></a>
+  <a href="start.php"><img src="img/home.jpeg" alt="img"></a>
   </div>
 
   <footer>
