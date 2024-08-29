@@ -22,7 +22,7 @@ DOCTYPE html>
   
   </div>
    <nav>
-      <a href="..//incorect.jpeg"><img src="" alt=""></a>
+      <a href="..//start.php"><img src="..//inccorect.jpeg" alt="helaas fout"></a>
    </nav>
   <footer>
         <p>&copy; the quizzler</p>

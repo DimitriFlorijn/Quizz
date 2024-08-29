@@ -9,7 +9,7 @@
 </head>
 <body>
    <header>
-      <h1>hallo en wolkom tot de quizz</h1>
+      <h1>Wolkom tot de quizz</h1>
   </header>
 
   <nav>
