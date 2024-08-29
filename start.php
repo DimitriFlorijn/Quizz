@@ -8,13 +8,15 @@
     <link rel="stylesheet" href=".css">
 </head>
 <body>
-
     <header>
-        <h1>Welcome to My PHP Website</h1>
     </header>
 
-    <div class="container">
-        
+    <div class="hoofd">
+        <h2>kies moeilijkheid gradatie</h2>
+        <a href="start.php"><img src="werknemer.jpeg" alt="img"></a>
+        <a href="start.php"><img src="docent.jpeg" alt="img"></a>
+        <a href="start.php"><img src="student.jpeg" alt="img"></a>
+        <a href="start.php"><img src="new.jpeg" alt="img"></a>
         <?php
             
         ?>

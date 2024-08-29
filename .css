@@ -2,7 +2,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background-color: rgb(255, 255, 255);
 }
 
 header {
@@ -26,10 +26,12 @@ nav a {
 
 nav a:hover {
   text-decoration: underline;
+  color: lightblue;
 }
 
-.container {
-  padding: 20px;
+.hoofd {
+  text-align: center;
+  padding: 10px;
 }
 
 footer {
