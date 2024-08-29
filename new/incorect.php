@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,20 +9,20 @@
 </head>
 <body>
    <header>
-      <h1>docent
+      <h1>
       </h1>
   </header>
 
   <nav>
-   <a href="..//index.php">Home</a>
+    <a href="..//index.php">Home</a>
      
   </nav>
 
-  <div class="docent">
+  <div class="">
   
   </div>
    <nav>
-      <a href=""><img src="" alt=""></a>
+      <a href="..//incorect.jpeg"><img src="" alt=""></a>
    </nav>
   <footer>
         <p>&copy; the quizzler</p>

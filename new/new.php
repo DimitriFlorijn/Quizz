@@ -9,16 +9,16 @@
 </head>
 <body>
    <header>
-      <h1>docent
+      <h1>new
       </h1>
   </header>
 
   <nav>
-   <a href="..//index.php">Home</a>
+    <a href="..//index.php">Home</a>
      
   </nav>
 
-  <div class="docent">
+  <div class="">
   
   </div>
    <nav>
