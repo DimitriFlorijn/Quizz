@@ -14,16 +14,11 @@
 
   <nav>
      <a href="index.php">Home</a>
-     <a href="start.php"><img src="img.home.png" alt="klick to start"></a>
+     
   </nav>
 
   <div class="container">
-    <h2>Home Page</h2>
-      <p>This is the home page of your website. You can start building your content here.</p>
-      
-      <?php
-            
-      ?>
+  <a href="start.php"><img src="img//home.jpeg" alt="img"></a>
   </div>
 
   <footer>
