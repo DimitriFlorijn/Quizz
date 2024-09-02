@@ -34,7 +34,17 @@ nav a:hover {
   text-align: center;
   padding: 10px;
 }
-
+.newQuist{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  
+}
+.new{
+  text-align: center;
+  padding: 10px;
+  
+}
 footer {
   background-color: #333;
   color: #fff;

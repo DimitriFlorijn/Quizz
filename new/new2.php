@@ -20,13 +20,15 @@
       </nav>
    </div>
    <div class="new">
-      <img src="quist1Img/quist1.png" alt="Wat is een P element">
+      <img src="quist2Img/quist2.png" alt="">
    
       <nav>
-         <a href="new2.php"><img src="quist1Img/quist1-1.png" alt="paragraaf"></a>
-         <a href="..//incorect.php"><img src="quist1Img/quist1-2.png" alt="Parse"></a>
-         <a href="..//incorect.php"><img src="quist1Img/quist1-3.png" alt="code krijg je alleen hooodpijn van"></a>
-         <a href="..//incorect.php"><img src="quist1Img/quist1-4.png" alt="weet ik niet"></a>
+<!--  new#.php
+      ..//incorect.php -->
+         <a href="..//incorect.php"><img src="quist2Img/quist2-1.jpeg" alt="xml"></a>
+         <a href="..//incorect.php"><img src="quist2Img/quist2-2.jpeg" alt="c#"></a>
+         <a href="newEnd.php"><img src="quist2Img/quist2-3.png" alt="html"></a>
+         <a href=""><img src="quist2Img/quist2-4.png" alt=""></a>
          
       </nav>
    </div>

@@ -20,13 +20,17 @@
       </nav>
    </div>
    <div class="new">
-      <img src="quist1Img/quist1.png" alt="Wat is een P element">
+      <img src="endImg.png" alt="gefeliciteerd">
+      <h2>u heeft de beginner quizz aff</h2>
+      <?php
+      $QuizzAchievment = "u heeft de niew tot software code af";
+      $QuizzAchievmentNumber = $QuizzAchievmentNumber ++;
+      ?>
+
+
    
       <nav>
-         <a href="new2.php"><img src="quist1Img/quist1-1.png" alt="paragraaf"></a>
-         <a href="..//incorect.php"><img src="quist1Img/quist1-2.png" alt="Parse"></a>
-         <a href="..//incorect.php"><img src="quist1Img/quist1-3.png" alt="code krijg je alleen hooodpijn van"></a>
-         <a href="..//incorect.php"><img src="quist1Img/quist1-4.png" alt="weet ik niet"></a>
+
          
       </nav>
    </div>

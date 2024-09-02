@@ -14,17 +14,19 @@ DOCTYPE html>
   </header>
 
   <nav>
-    <a href="..//index.php">Home</a>
+    <a href="index.php">Home</a>
      
   </nav>
 
   <div class="">
   
-  </div>
+ 
    <nav>
-      <a href="..//start.php"><img src="..//inccorect.jpeg" alt="helaas fout"></a>
+      <a href="start.php"><img src="inccorect.jpeg" alt="helaas fout"></a>
    </nav>
+   </div>
   <footer>
+   
         <p>&copy; the quizzler</p>
   </footer>
 </body>

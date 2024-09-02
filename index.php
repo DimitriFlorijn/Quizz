@@ -11,7 +11,9 @@
    <header>
       <h1>Welkom tot de quizz</h1>
   </header>
-
+  <?php
+    $QuizzAchievmentNumber;
+  ?>
   <nav>
      <a href="index.php">Home</a>
   </nav>
@@ -27,4 +29,12 @@
         <p>&copy; the quizzler</p>
   </footer>
 </body>
+
+<!--if ($QuizzAchievmentNumber > 2){
+   <p>$QuizzAchievmentNumber, QuizzAchievment</p>
+  }
+  else{
+   <p>doe de leuke quizz</p>
+} -->
 </html>
+
