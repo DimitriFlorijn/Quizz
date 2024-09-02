@@ -20,8 +20,9 @@
       </nav>
    </div>
    <div class="new">
-      <img src="endImg.png" alt="gefeliciteerd">
+      <img src="endImg.jpeg" alt="gefeliciteerd">
       <h2>u heeft de beginner quizz aff</h2>
+      <h2>u kunt altijd terug en een andere <a href="..//start.php">moeilijkheids gradatie</a></h2>
       <?php
       $QuizzAchievment = "u heeft de niew tot software code af";
       $QuizzAchievmentNumber = $QuizzAchievmentNumber ++;
