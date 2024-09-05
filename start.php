@@ -13,6 +13,7 @@
     <nav>
         <p>U kunt altijd naar home</p>
      <a href="index.php">Home</a>
+     <a href="inlog.php">Inlog</a>
      
   </nav>
 

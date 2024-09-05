@@ -11,35 +11,10 @@ if($_POST['action'] == 'create'){
 
 
     //Variabelen vullen
-    $attractie = $_POST['attractie'];
-    if(empty($attractie)){
-        $errors[] = "vul de attractie-naam in";
-    }
-    $type = $_POST['type'];
-    if(empty($type)){
-        $errors[] = "vul de type in";
-    }
-    $capaciteit = $_POST['capaciteit']; 
-    if(!is_numeric($capaciteit)){
-        $errors[] = "vul voor capaciteit een geldig getal in";
-    }
-    if(isset($_POST['prioriteit'])){
-        $prioriteit = 1;
-    }
-    else{
-        $prioriteit = 0;
-    }
-
-    $melder = $_POST['melder'];
-    if(empty($melder)){
-        $errors[] = "vul je naam in";
-    }
-    $overige_info = $_POST['overige_info'];
-
-    if(isset($errors)){
-        var_dump($errors);
-        die();
-        }
+    //$ = $_POST[''];
+ //   if(empty($)){
+ //       $errors[] = "";
+ //  }
     
 
 
@@ -48,7 +23,7 @@ if($_POST['action'] == 'create'){
     require_once 'conn.php';
 
     //2. Query
-    $query = "INSERT INTO meldingen()"; 
+    $query = "INSERT INTO //\\()"; 
 
     //3. Prepare
     $statement = $conn ->prepare($query);
@@ -65,28 +40,28 @@ if ($_POST['action'] == 'update'){
 
 
      $id = $_POST['id'];
-    $capaciteit = $_POST['capaciteit']; 
+    $capaciteit = $_POST['']; 
     if(!is_numeric($capaciteit)){
-        $errors[] = "vul voor capaciteit een geldig getal in";
+        $errors[] = "";
     }
-    if(isset($_POST['prioriteit'])){
+    if(isset($_POST[''])){
         $prioriteit = 1;
     }
     else{
         $prioriteit = 0;
     }
 
-    $melder = $_POST['melder'];
+    $melder = $_POST[''];
     if(empty($melder)){
-        $errors[] = "vul je naam in";
+        $errors[] = "";
     }
-    $overige_info = $_POST['overige_info'];
+    $overige_info = $_POST[''];
 
 
 
     require_once 'conn.php';
 //--------------------------------------------------------------><
-    $query = "UPDATE meldingen SET capaciteit = :capaciteit, prioriteit = :prioriteit, melder = :melder, overige_info = :overige_info WHERE id = :id";
+    $query = "";
 
     $statement = $conn -> prepare($query);
 
@@ -104,7 +79,7 @@ if($_POST['action'] == 'delete')
 
     require_once 'conn.php';
 
-    $query = "DELETE FROM meldingen WHERE id = :id";
+    $query = "DELETE FROM quizz WHERE id = :id";
 
     $statement = $conn -> prepare($query);
 
