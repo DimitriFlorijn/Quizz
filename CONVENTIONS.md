@@ -14,26 +14,21 @@ Dit document beschrijft de code conventions die moeten worden gevolgd om de lees
 ---
 
 ## Naming Conventions
-
 - **Variabelen en functies**: Gebruik `UperCamelCase` voor variabelen en functies.
 
 ## Wit Ruimte's
-
 - niet al te veel witruimtes 
 
 ## Indentatie
-
 - **indentatie**: parent child relation 
 
 ## Commentaar
-
 - **comments**: gebruik bij wat complexere dingen en bijv niet bij het standart crud reeks.
 
 ## Functies
 - een Db link dat er met een functie om in te kunnen loggen
 
 ## Fout Preventie
-
 - voor fouten eerst kijken en weeten wat er fout is en dan noog niet git pushen zoadat er geen foute kode guplublished woordt
 
 ## Bestandsnamen en Mappenstructuur
