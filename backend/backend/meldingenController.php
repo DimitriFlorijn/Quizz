@@ -19,21 +19,15 @@ if($_POST['action'] == 'create'){
 
 
 
-    //1. Verbinding
     require_once 'conn.php';
 
-    //2. Query
-    $query = "INSERT INTO //\\()"; 
+    $query = "INSERT INTO Users()"; 
 
-    //3. Prepare
     $statement = $conn ->prepare($query);
 
-    //4. Execute
     $statement ->execute([
         
     ]);
-    $msg = "melding verzonden";
-    header("location: ../meldingen/index.php?msg=$msg" );
 }
 
 if ($_POST['action'] == 'update'){

@@ -17,7 +17,7 @@ Dit document beschrijft de code conventions die moeten worden gevolgd om de lees
 - **Variabelen en functies**: Gebruik `UperCamelCase` voor variabelen en functies.
 
 ## Wit Ruimte's
-- niet al te veel witruimtes 
+- niet al te veel witruimtes > hou het beperkt tot max 1 regel ertussen
 
 ## Indentatie
 - **indentatie**: parent child relation 

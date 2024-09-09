@@ -16,6 +16,7 @@
   ?>
   <nav>
      <a href="index.php">Home</a>
+     <a href="inlog.php">Log in</a>
   </nav>
 
   <div class="hoofd">
