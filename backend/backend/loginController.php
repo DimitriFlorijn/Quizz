@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = $_POST['password'];
 
     // Haal de gebruikersgegevens op uit de database
-    $stmt = $pdo->prepare("SELECT * FROM users WHERE username = ?");
+    $stmt = $pdo->prepare("SELECT * FROM users WHERE username = user");
     $stmt->execute([$username]);
     $user = $stmt->fetch();
 

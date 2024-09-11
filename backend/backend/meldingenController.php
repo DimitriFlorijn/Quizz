@@ -35,7 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     ':description' => $description
                 ]);
                 $msg = "Gebruiker succesvol aangemaakt.";
-                header("Location: ../meldingen/index.php?msg=" . urlencode($msg));
+                header("Location: index.php?msg=" . urlencode($msg));
                 exit;
             } catch (PDOException $e) {
                 $_SESSION['error'] = "Fout bij het aanmaken van de gebruiker: " . $e->getMessage();

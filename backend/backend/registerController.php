@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
              
 
         // Controleer of de gebruikersnaam al bestaat
-        $stmt = $pdo->prepare("SELECT id FROM users WHERE username = ?");
+        $stmt = $pdo->prepare("SELECT id FROM users WHERE username = user");
         $stmt->execute([$username]);
         $existing_user = $stmt->fetch();
 
@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // Wachtwoord hashen en gebruiker opslaan in de database
         $hashed_password = password_hash($password, PASSWORD_DEFAULT);
-        $stmt = $pdo->prepare("INSERT INTO users (username, password) VALUES (?, ?)");
+        $stmt = $pdo->prepare("INSERT INTO users (username, password) "); //-VALUES (?, ?)\\
         if ($stmt->execute([$username, $hashed_password])) {
             $_SESSION['success'] = "Registratie succesvol! Je kunt nu inloggen.";
             header("Location: ../login.php");

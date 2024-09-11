@@ -2,7 +2,7 @@
 
 
 $dbHost = 'localhost';
-$dbName = 'storingapp';
+$dbName = 'quizz';
 $dbUser = 'root';
 $dbPass = '';
 
