@@ -11,9 +11,8 @@
    <header>
       <h1>Welkom tot de quizz</h1>
   </header>
-  <?php
-    $QuizzAchievmentNumber;
-  ?>
+  <!--^^standart hooft -->
+
   <nav>
      <a href="index.php">Home</a>
      <a href="inlog.php">Log in</a>
@@ -31,11 +30,6 @@
   </footer>
 </body>
 
-<!--if ($QuizzAchievmentNumber > 2){
-   <p>$QuizzAchievmentNumber, QuizzAchievment</p>
-  }
-  else{
-   <p>doe de leuke quizz</p>
-} -->
+
 </html>
 
