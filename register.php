@@ -1,24 +1,30 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Registreren</title>
+    <link rel="stylesheet" href=".css">
 </head>
 <body>
     <div class="login-container">
-        <h2>Register</h2>
-        <form action="register.php" method="POST">
-            <label for="username">Username:</label>
+        <h2>Registreren</h2>
+        
+        <!-- Foutmeldingen weergeven als ze bestaan -->
+        
+        <form action="backend/registerController.php" method="POST">
+            <label for="username">Gebruikersnaam:</label>
             <input type="text" id="username" name="username" required>
 
-            <label for="password">Password:</label>
+            <label for="password">Wachtwoord:</label>
             <input type="password" id="password" name="password" required>
 
-            <button type="submit">Register</button>
+            <button type="submit">Registreren</button>
+            <h2></h2>
         </form>
-        <p>heb je al een account account? <a href="inlog.php">Login here</a></p>
+        
+        <a href="inlog.php">al een account? Log hier in</a>
     </div>
 </body>
 </html>

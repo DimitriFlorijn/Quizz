@@ -18,7 +18,7 @@
   </nav>
 
     <div class="hoofd">
-        <h2>Kies moeilijkheid gradatie</h2>
+        <h2>Kies moeilijkheid gradatie "alleen 'new' de rechter werkt</h2>
         <a href="werknemer/werknemer.php"><img src="werknemer.jpeg" alt="wrknemer"></a>
         <a href="docent/docent.php"><img src="docent.jpeg" alt="docent"></a>
         <a href="student/student.php"><img src="student.jpeg" alt="student"></a>

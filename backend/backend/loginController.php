@@ -1,37 +1,24 @@
 <?php
-    session_start();
+session_start();
+require 'conn.php'; // Verbind met de database
 
-
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    require_once 'conn.php';
+    // Haal de gebruikersgegevens op uit de database
+    $stmt = $pdo->prepare("SELECT * FROM users WHERE username = ?");
+    $stmt->execute([$username]);
+    $user = $stmt->fetch();
 
-    $query = "SELECT * FROM users WHERE username = :username";
-
-    $statement = $conn->prepare($query);
-
-    $statement ->execute([
-        ":username" => $username
-    ]);
-
-    $user = $statement->fetch(PDO::FETCH_ASSOC);
-
-    if($statement -> rowCount() < 1)
-    {
-    header("location: ../login.php?msg=Error: foute username");
-    die;
+    if ($user && password_verify($password, $user['password'])) {
+        $_SESSION['username'] = $username;
+        header("Location: ../dashboard.php");
+        exit();
+    } else {
+        $_SESSION['error'] = "Ongeldige gebruikersnaam of wachtwoord."; 
+        header("Location: ../login.php");
+        exit();
     }
-
-    if(!password_verify($password, $user['password']))
-    {
-    header("location: ../login.php?msg=Error: wachtwoord is onjuist");
-
-    die;
-    }
-
-    $_SESSION['user_id'] = $user['id'];
-
-    header("location: ../meldingen/index.php?msg=welkom $username");
-    
+}
 ?>
