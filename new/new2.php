@@ -20,16 +20,11 @@
       </nav>
    </div>
    <div class="new">
-      <img src="quist2Img/quist2.png" alt="">
-   
+      <h2>wat voor 'code languese' gebruiken we vooral voor web aplicaties</h2>   
       <nav>
-<!--  new#.php
-      ..//incorect.php -->
-         <a href="..//incorect.php"><img src="quist2Img/quist2-1.jpeg" alt="xml"></a>
-         <a href="..//incorect.php"><img src="quist2Img/quist2-2.jpeg" alt="c#"></a>
+         <a href="incorectq2.php"><img src="quist2Img/quist2-1.jpeg" alt="xml"></a>
+         <a href="incorectq2.php"><img src="quist2Img/quist2-2.jpeg" alt="c#"></a>
          <a href="newEnd.php"><img src="quist2Img/quist2-3.png" alt="html"></a>
-         <a href=""><img src="quist2Img/quist2-4.png" alt=""></a>
-         
       </nav>
    </div>
   <footer>

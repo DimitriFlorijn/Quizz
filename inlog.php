@@ -11,9 +11,6 @@
    <header>
       <h1>inloggen</h1>
   </header>
-
-  
-
   <nav>
      <a href="index.php">Home</a>
   </nav>
