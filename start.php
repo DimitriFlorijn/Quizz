@@ -17,14 +17,14 @@
      
   </nav>
 
-    <div class="hoofdStart">
+    <div class="hoofd">
         <h2>Kies moeilijkheid gradatie "alleen 'new' de rechter werkt</h2>
         <h3>moeilijkste: werknemer, moeilijk: docent, normaal: student, makelijkste: newbie</h3>
         <a href="werknemer/werknemer.php"><img src="werknemer.jpeg" alt="wrknemer"></a>
         <a href="docent/docent.php"><img src="docent.jpeg" alt="docent"></a>
         <a href="student/student.php"><img src="student.jpeg" alt="student"></a>
         <a href="new/new.php"><img src="new.jpeg" alt="new tot software"></a>
-        <h2>iedere gradatie heeft 4 vraagen, klick op de foto van uw keus</h2>
+        <h2>iedere gradatie heeft 4 vraagen, click op de foto van uw keus</h2>
         <?php
             
         ?>

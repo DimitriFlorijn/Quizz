@@ -1,19 +1,16 @@
 <?php
 session_start();
 
-// Controleer of de gebruiker is ingelogd
 if (!isset($_SESSION['user_id'])) {
     $msg = "Eerst inloggen voordat u verder kunt.";
     header("Location: ../login.php?msg=" . urlencode($msg));
     exit;
 }
 
-// Functie om errors te loggen
 function logError($errorMessage) {
     error_log($errorMessage, 3, "../logs/errors.log");
 }
 
-// Functie om een gebruiker toe te voegen
 function createUser($conn, $name, $password) {
     try {
         $query = "INSERT INTO Users (name, password) VALUES (:name, :password)";
@@ -29,7 +26,6 @@ function createUser($conn, $name, $password) {
     }
 }
 
-// Functie om een melding bij te werken
 function updateMelding($conn, $id, $capaciteit, $prioriteit, $melder, $overige_info) {
     try {
         $query = "UPDATE meldingen SET capaciteit = :capaciteit, prioriteit = :prioriteit, melder = :melder, overige_info = :overige_info WHERE id = :id";
@@ -48,7 +44,6 @@ function updateMelding($conn, $id, $capaciteit, $prioriteit, $melder, $overige_i
     }
 }
 
-// Functie om een melding te verwijderen
 function deleteMelding($conn, $id) {
     try {
         $query = "DELETE FROM quizz WHERE id = :id";
@@ -61,7 +56,6 @@ function deleteMelding($conn, $id) {
     }
 }
 
-// Functie om meldingen op te halen
 function getMeldingen($conn) {
     try {
         $query = "SELECT * FROM meldingen";
@@ -79,7 +73,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     
     switch ($action) {
         case 'create':
-            // Verwerk de 'create' actie
             $name = $_POST['name'] ?? '';
             $password = $_POST['password'] ?? '';
             $errors = [];
@@ -108,7 +101,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             break;
 
         case 'update':
-            // Verwerk de 'update' actie
             $id = $_POST['id'] ?? null;
             $capaciteit = $_POST['capaciteit'] ?? null;
             $prioriteit = isset($_POST['prioriteit']) ? 1 : 0;
@@ -143,7 +135,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             break;
 
         case 'delete':
-            // Verwerk de 'delete' actie
             $id = $_POST['id'] ?? null;
             if (empty($id) || !is_numeric($id)) {
                 $msg = "Ongeldig ID voor verwijdering.";

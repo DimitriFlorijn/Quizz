@@ -4,29 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Homescreen</title>
-    <link rel="stylesheet" href=".css"> 
+    <title>Inloggen</title>
+    <link rel="stylesheet" href=".css">
 </head>
 <body>
    <header>
-      <h1>inloggen</h1>
+      <h1>Inloggen</h1>
   </header>
+
   <nav>
      <a href="index.php">Home</a>
   </nav>
 
-  <!-- Formulier voor gebruikersinlog -->
-  <form action="login.php" method="POST"> <!-- Zorg ervoor dat je formulier een actie en methode heeft -->
-      <label for="username">Gebruikersnaam:</label><br>
-      <input type="text" id="username" name="username" required><br><br>
+  <div class="login-container">
+      <h2>Login</h2>
 
-      <label for="password">Wachtwoord:</label><br>
-      <input type="password" id="password" name="password" required><br><br>
+      <?php
+      session_start(); 
+      if (isset($_SESSION['error'])) {
+          echo "<p style='color: red;'>" . htmlspecialchars($_SESSION['error']) . "</p>";
+          unset($_SESSION['error']); 
+      }
+      ?>
 
-      <input type="submit" value="Login">
-  </form>
+      <form action="backend/loginController.php" method="POST">
+          <label for="username">Gebruikersnaam:</label><br>
+          <input type="text" id="username" name="username" required placeholder="Voer je gebruikersnaam in"><br><br>
 
-  <p>Nog geen account?<a href="register.php"> Maak hier een aan.</a></p>
+          <label for="password">Wachtwoord:</label><br>
+          <input type="password" id="password" name="password" required placeholder="Voer je wachtwoord in"><br><br>
+
+          <button type="submit">Login</button>
+      </form>
+
+      <p>Nog geen account? <a href="register.php">Maak hier een aan</a>.</p>
+  </div>
 
   <footer>
         <p>&copy; The Quizzler</p>

@@ -22,15 +22,15 @@
    <div class="new">
       <h3>waar staat een p element voor?</h3>
       <img src="quist1Img/quist1.png" alt="Wat is een P element">
-   
-      <nav>
-         <a href="new2.php"><img src="quist1Img/quist1-1.png" alt="paragraaf"></a>
-         <a href="incorectq1.php"><img src="quist1Img/quist1-2.png" alt="Parse"></a>
-         <a href="incorectq1.php"><img src="quist1Img/quist1-3.png" alt="code krijg je alleen hooodpijn van"></a>
-         <a href="incorectq1.php"><img src="quist1Img/quist1-4.png" alt="weet ik niet"></a>
-         
-      </nav>
    </div>
+   <div class="newimg">
+         <nav>
+            <h3>kies en click op de volgende mogelijkheden</h3>
+            <a href="new2.php"><img src="quist1Img/quist1-1.png" alt="paragraaf"></a>
+            <a href="incorectq1.php"><img src="quist1Img/quist1-2.png" alt="Parse"></a>
+            <a href="incorectq1.php"><img src="quist1Img/quist1-3.png" alt="code krijg je alleen hooodpijn van"></a>
+         </nav>
+      </div>
   <footer>
         <p>&copy; the quizzler</p>
   </footer>
