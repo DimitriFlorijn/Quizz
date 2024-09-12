@@ -1,5 +1,4 @@
 <?php
-session_start();
 require 'conn.php'; 
 
 // Functie om invoer schoon te maken en te valideren
@@ -8,8 +7,8 @@ function clean_input($data) {
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $username = clean_input($_POST['username']);
-    $password = clean_input($_POST['password']);
+    $username = $_POST['username'];
+    $password = $_POST['password'];
 
     // Controleer of gebruikersnaam en wachtwoord zijn ingevuld
     if (!empty($username) && !empty($password)) {
@@ -26,10 +25,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             exit();
         }
 
-        // Wachtwoord hashen en gebruiker opslaan in de database
-        $hashed_password = password_hash($password, PASSWORD_DEFAULT);
-        $stmt = $pdo->prepare("INSERT INTO users (username, password) "); //-VALUES (?, ?)\\
-        if ($stmt->execute([$username, $hashed_password])) {
+        
+        $stmt = $pdo->prepare("INSERT INTO users (username, password) VALUES ($username, $password)"); //-VALUES (?, ?)\\
+        if ($stmt->execute([$username, $password])) {
             $_SESSION['success'] = "Registratie succesvol! Je kunt nu inloggen.";
             header("Location: ../login.php");
             exit();
