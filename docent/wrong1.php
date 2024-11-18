@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,33 +9,28 @@
 </head>
 <body>
    <header>
-      <h1>werknemer
+      <h1>
       </h1>
   </header>
 
   <nav>
-     <a href="..//index.php">Home</a>
+    <a href="index.php">Home</a>
      
   </nav>
 
-  <div class="">
+  <div class="wrongDocent1">
   
-  </div>
+ 
    <nav>
-      <a href=""><img src="" alt=""></a>
+      <a href="..//start.php"><img src="..//inccorect.jpeg" alt="helaas fout"></a>
    </nav>
+   <h2></h2>
+   <h3> klick op home of de knop om terug te gaan</h3>
+   <p></p>
+   </div>
   <footer>
+   
         <p>&copy; the quizzler</p>
   </footer>
 </body>
 </html>
-<!--
- Security: Encryptie
-Vraag: Welke van de volgende technieken wordt beschouwd als een symmetrische encryptiealgoritme?
-Antwoorden:
-
-A) RSA
-B) AES
-C) SHA-256
-D) MD5
-(Correct antwoord: B)-->

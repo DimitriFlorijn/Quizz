@@ -41,7 +41,7 @@
         <button type="submit">Registreren</button>
     </form>
 
-    <p>Al een account? <a href="inlog.php">Log hier in</a></p>
+    <p>Al een account? <a href="..//inlog.php">Log hier in</a></p>
 </div>
 
 </body>
