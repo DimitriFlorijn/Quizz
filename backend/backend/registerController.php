@@ -8,6 +8,7 @@ function clean_input($data) {
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = clean_input($_POST['username']);
     $password = clean_input($_POST['password']);
+    $funnyname = clean_input($_POST['funnyname']);
 
     if (!empty($username) && !empty($password)) {
         
@@ -24,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Hash het wachtwoord voordat het in de database wordt opgeslagen
         $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
-        $stmt = $pdo->prepare("INSERT INTO users (username, password) VALUES (?, ?)");
+        $stmt = $pdo->prepare("INSERT INTO users (username, password, funnyname) VALUES (?, ?)");
         if ($stmt->execute([$username, $hashed_password])) {
             $_SESSION['success'] = "Registratie succesvol! Je kunt nu inloggen.";
             header("Location: ../login.php");

@@ -26,7 +26,7 @@
    </nav>
    <h2></h2>
    <h3> klick op home of de knop om terug te gaan</h3>
-   <p>op een regel zou een foutmelding krijgen want de naam van een <a href="https://www.w3schools.com/html/html_attributes.asp">attribute</a> is inccorect klick op atribute om er meer over te leeren :)</p>
+   <p>de code gaat van boven naar beneden dus alles komt op een bepaalt volgoorde</p>
    </div>
   <footer>
    

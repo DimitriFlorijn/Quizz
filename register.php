@@ -31,18 +31,21 @@
     }
     ?>
 
-    <form action="backend/registerController.php" method="POST">
+    <form action="inlog.php" method="POST">
         <label for="username">Gebruikersnaam:</label>
         <input type="text" id="username" name="username" required maxlength="50" placeholder="Voer je gebruikersnaam in">
 
         <label for="password">Wachtwoord:</label>
         <input type="password" id="password" name="password" required minlength="8" placeholder="Voer je wachtwoord in">
 
-        <button type="submit">Registreren</button>
+        <label for="funnyname">Funny name voor de lol:</label>
+        <input type="funnyname" id="funnyname" name="funnyname" required minlength="4" placeholder="Voer je funnyname in">
+
+        <button href="inlog.php" type="submit">Registreren</button>
     </form>
 
-    <p>Al een account? <a href="..//inlog.php">Log hier in</a></p>
+    <p>Al een account? <a href="inlog.php">Log hier in</a></p>
 </div>
 
 </body>
-</html>
+</html> 

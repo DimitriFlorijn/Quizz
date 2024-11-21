@@ -51,24 +51,23 @@
           }
         </style>
     </div>
-      <form method="post" action="">
-          <label for="answer">Enter the correct answer:</label>
-          <input type="text" name="answer" id="answer" required>
-          <button type="submit">Submit</button>
-      </form>
-      <div class="dicentneedy">
+    <form method="post" action="">
+            <label for="answer">Enter the correct answer:</label>
+            <input type="text" name="answer" id="answer" required>
+            <button type="submit">Submit</button>
+        </form>
+
         <?php
-          if ($_SERVER["REQUEST_METHOD"] === "POST") {
-              $correctAnswer = "b";
-              $userAnswer = trim($_POST['answer']); 
-              if ($userAnswer === $correctAnswer || "B") {
-                  header("Location: corect.php"); 
-                  exit();
-              } else {
-                  header("Location: wrong2.php");
-                  exit();
-              }
+        if ($_SERVER["REQUEST_METHOD"] === "POST") {
+            $userAnswer = trim(strtolower($_POST['answer']));
+            if ($userAnswer === "b") {
+                header("Location: corect.php");
+                exit();
+            } else {
+                header("Location: wrong2.php");
+                exit();
             }
+        }
         ?>
       </div>
     </div>

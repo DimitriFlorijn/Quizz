@@ -3,45 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Inloggen</title>
-    <link rel="stylesheet" href=".css">
+    <link rel="stylesheet" href=".css"> 
 </head>
 <body>
-   <header>
-      <h1>Inloggen</h1>
-  </header>
+    <header>
+        <h1>Inloggen</h1>
+    </header>
 
-  <nav>
-     <a href="index.php">Home</a>
-  </nav>
+    <nav>
+        <a href="index.php">Home</a>
+    </nav>
 
-  <div class="login-container">
-      <h2>Login</h2>
+    <main class="login-container">
+        <h2>Login</h2>
 
-      <?php
-      session_start(); 
-      if (isset($_SESSION['error'])) {
-          echo "<p style='color: red;'>" . htmlspecialchars($_SESSION['error']) . "</p>";
-          unset($_SESSION['error']); 
-      }
-      ?>
+        <?php
+        session_start(); 
+        if (isset($_SESSION['error'])) {
+            echo "<p class='error-message'>" . htmlspecialchars($_SESSION['error']) . "</p>";
+            unset($_SESSION['error']); 
+        }
+        ?>  
 
-      <form action="backend/loginController.php" method="POST">
-          <label for="username">Gebruikersnaam:</label><br>
-          <input type="text" id="username" name="username" required placeholder="Voer je gebruikersnaam in"><br><br>
+        <form action="start.php" method="POST">
+            <div class="form-group">
+                <label for="username">Gebruikersnaam:</label>
+                <input 
+                    type="text" 
+                    id="username" 
+                    name="username" 
+                    required 
+                    placeholder="Voer je gebruikersnaam in" 
+                    aria-label="Gebruikersnaam invoeren"
+                >
+            </div>
 
-          <label for="password">Wachtwoord:</label><br>
-          <input type="password" id="password" name="password" required placeholder="Voer je wachtwoord in"><br><br>
+            <div class="form-group">
+                <label for="password">Wachtwoord:</label>
+                <input 
+                    type="password" 
+                    id="password" 
+                    name="password" 
+                    required 
+                    placeholder="Voer je wachtwoord in" 
+                    aria-label="Wachtwoord invoeren"
+                >
+            </div>
 
-          <button type="submit">Login</button>
-      </form>
+            <button type="submit" class="login">Login</button>
+        </form>
 
-      <p>Nog geen account? <a href="register.php">Maak hier een aan</a>.</p>
-  </div>
+        <p>Nog geen account? <a href="register.php">Maak er hier een</a>.</p>
+    </main>
 
-  <footer>
-        <p>&copy; The Quizzler</p>
-  </footer>
+    <footer>
+        <p>&copy; <?php echo date('Y'); ?> The Quizzler. Alle rechten voorbehouden.</p>
+    </footer>
 </body>
 </html>
