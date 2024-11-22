@@ -25,7 +25,7 @@
        padding: 100px;
       }      
     </style>
-    <h2>correct je hebt de docent gedeelte af</h2>
+    <h2>correct je hebt de docent gedeelte af, maar als docent zijnde nooit ,')</h2>
     
     <div class="docentimg">
       <img src="correct.png" alt="code" style="margin: 10px;">
